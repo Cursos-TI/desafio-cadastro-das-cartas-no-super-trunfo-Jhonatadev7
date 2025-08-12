@@ -7,7 +7,7 @@ typedef struct {
     float pib;             // PIB
     int pontos_turisticos; // Número de pontos turísticos
 } Carta;
-
+    // Função genérica para entrada de dados
 void cadastrarCarta(Carta *carta, int numero) {
     printf("\nCadastro da carta %d\n", numero);
     printf("Digite o nome da Cidade: ");
@@ -21,7 +21,7 @@ void cadastrarCarta(Carta *carta, int numero) {
     printf("Digite o numero de pontos turisticos: ");
     scanf("%d", &carta->pontos_turisticos);
 }
-
+    // Função genérica para exibir dados
 void exibirCarta(Carta carta, int numero) {
     printf("\nCarta %d: %s\n", numero, carta.cidade);
     printf("Populacao: %d\n", carta.populacao);
